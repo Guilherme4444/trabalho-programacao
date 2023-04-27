@@ -1,0 +1,101 @@
+/*estilos*/
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+#youtube{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'barra_h barra_h'
+        'video proximos_videos'
+        'descricao proximos_videos'
+        'comentario proximos_videos';
+    height: 100%;
+    width: 100%;
+}
+
+#youtube div{
+    padding: 1em;
+}
+
+#barra_h{
+    grid-area: barra_h;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+}
+
+#descricao{
+    grid-area: descricao;
+    background-color: rgb(103, 4, 4);
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+#descricao img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: white;
+    
+}
+
+.video{
+    height: 95%;
+    width: 100%;
+    grid-area: video;
+    background-color: rgb(222, 2, 2);
+}
+
+#comentario{
+    height: 100%;
+    width:100%;
+    grid-area: comentario;
+    background-color: rgb(144, 5, 5);
+}
+
+#proximos_videos{
+    grid-area: proximos_videos;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(137, 2, 2);
+}
+
+#pesquisa{
+    margin-left: auto;
+    margin-right: 950px;
+    border: 1px solid white;
+    border-radius: 20%;
+    background-color: white;
+}
+
+.coment{
+    text-align: justify;
+    font-size: 21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#menu{
+    width: 25px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.coment img{
+    border-radius: 50%;
+    height: 25px;
+    width: 30px;
+}
+
+#like{
+    
+}
